@@ -5,7 +5,8 @@ import {
   Send, 
   CheckCircle2, 
   Sparkles, 
-  AlertCircle 
+  AlertCircle,
+  Phone
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -164,6 +165,24 @@ export const Contact: React.FC = () => {
                 </div>
               </a>
 
+              {/* Phone Number */}
+              <a
+                href="tel:+919393750422"
+                className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-400/50 transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-400/30 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase font-mono tracking-wider text-slate-500">
+                    Phone Number
+                  </div>
+                  <div className="text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors">
+                    +91 9393750422
+                  </div>
+                </div>
+              </a>
+
               {/* Location */}
               <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
                 <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
@@ -174,7 +193,7 @@ export const Contact: React.FC = () => {
                     Current Location
                   </div>
                   <div className="text-sm font-semibold text-white">
-                    Andhra Pradesh, India
+                    Hyderabad, India
                   </div>
                 </div>
               </div>

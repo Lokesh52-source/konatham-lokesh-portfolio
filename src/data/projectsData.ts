@@ -21,14 +21,14 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: 'nyc-traffic-powerbi',
-    title: 'NYC Traffic Accident Data Analysis Dashboard',
+    title: 'Urban Mobility Intelligence: Traffic Accident & Road Safety Analytics',
     category: 'Power BI',
     categoryLabel: 'Data Analytics | Power BI',
     featured: true,
     image: '/assets/powerbi_dashboard.png',
-    description: 'An interactive Power BI dashboard analyzing NYC motor vehicle collision data (74,881+ records) to identify accident patterns, injury trends, fatalities, geographic distribution, and time-based trends.',
-    longDescription: 'This comprehensive Power BI project dives deep into 74,881 collision records from New York City. Built with rigorous Power Query transformations and custom DAX measures, it evaluates safety metrics across all five boroughs, time periods, and weekdays to discover peak accident hours and high-risk collision zones.',
-    tools: ['Power BI', 'Power Query', 'DAX', 'Data Modeling', 'Data Cleaning', 'Data Visualization'],
+    description: 'An end-to-end Power BI dashboard analyzing approximately 74,881 NYC traffic accident records using Power Query, DAX, and a star-schema data model.',
+    longDescription: 'This comprehensive Power BI project analyzes approximately 74,881 NYC collision records. Built with rigorous Power Query transformations, DAX measures, and a star-schema data model, it designs core KPIs for total accidents, injuries, fatalities, and accident rates while investigating trends by month, day, weekend, borough, and location to surface actionable road safety patterns.',
+    tools: ['Power BI', 'Power Query', 'DAX', 'Star Schema', 'Data Modeling', 'Data Cleaning', 'Data Visualization'],
     kpis: [
       { label: 'Total Accidents', value: '74,881', sub: 'Collision records analyzed' },
       { label: 'Total Injuries', value: '27,000+', sub: 'Persons injured across crashes' },
@@ -51,9 +51,9 @@ export const projectsData: Project[] = [
       'Geospatial Mapping & Trend Spotting'
     ],
     highlights: [
-      'Engineered DAX measures to normalize injury volumes against accident counts',
-      'Analyzed weekend vs weekday behavioral shifts across borough divisions',
-      'Built executive dashboard layout optimized for fast visual interpretation'
+      'Built an end-to-end Power BI dashboard analyzing ~74,881 NYC traffic accident records using Power Query, DAX, and a star-schema model',
+      'Designed KPIs for total accidents, injuries, fatalities, accident rates, and average injuries per accident',
+      'Investigated accident trends by month, day, weekend, borough, and location to surface actionable road safety patterns'
     ],
     githubUrl: 'https://github.com/Lokesh52-source',
     liveDemoUrl: '#'
@@ -90,9 +90,9 @@ export const projectsData: Project[] = [
       'Executive KPI metric tiles with conditional formatting'
     ],
     highlights: [
-      'Discovered peak order volume concentrated in specific evening hours',
-      'Identified high-spend customer segments across gifting occasions',
-      'Turned 3 disconnected raw tables into an interactive, zero-lag analytical interface'
+      'Built an interactive Excel dashboard to analyze revenue, orders, products, customers, occasions, cities, and sales trends',
+      'Leveraged PivotTables, PivotCharts, Slicers, Timelines, and advanced formulas to summarize and explore sales data',
+      'Identified top-performing products, high-revenue occasions, and seasonal sales patterns to support business decisions'
     ],
     githubUrl: 'https://github.com/Lokesh52-source'
   },
@@ -128,9 +128,9 @@ export const projectsData: Project[] = [
       'Conditional CASE WHEN logic for shift classification'
     ],
     highlights: [
-      'Segmented customer transactions into 3 distinct operational business shifts',
-      'Extracted annual peak sales months to identify seasonal purchase habits',
-      'Identified top revenue-generating customers and unique buyers by category'
+      'Analyzed retail sales data using PostgreSQL to uncover sales trends, customer behavior, and category performance',
+      'Wrote CTEs, window functions, aggregate functions, CASE statements, and date functions to solve business questions',
+      'Identified top customers, high-value transactions, best-performing sales months, and customer activity across product categories'
     ],
     sqlSnippet: `-- Shift-wise Sales Volume Analysis
 WITH hourly_sales AS (

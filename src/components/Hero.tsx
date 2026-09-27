@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
             <span className="text-slate-600">•</span>
             <span className="flex items-center gap-1 text-slate-400">
               <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-              Andhra Pradesh, India
+              Hyderabad, India
             </span>
           </div>
 
